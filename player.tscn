@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccva3rgw4pnky"]
+
+[ext_resource type="ArrayMesh" uid="uid://bmmgjsl554mp5" path="res://models/character-male-e.obj" id="1_ec74w"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_to0wj"]
+radius = 0.175168
+height = 0.686182
+
+[node name="Player" type="Node3D"]
+
+[node name="model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.260525, 0)
+mesh = ExtResource("1_ec74w")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0741756, 0)
+shape = SubResource("CapsuleShape3D_to0wj")
