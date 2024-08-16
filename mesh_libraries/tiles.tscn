@@ -1,163 +1,171 @@
-[gd_scene load_steps=33 format=3 uid="uid://dfjwxxmjxl3o"]
+[gd_scene load_steps=34 format=3 uid="uid://dfjwxxmjxl3o"]
 
-[ext_resource type="ArrayMesh" uid="uid://bbpajueckbda2" path="res://tiles/tile.obj" id="1_atsgk"]
-[ext_resource type="ArrayMesh" uid="uid://ccsrmaynupjgi" path="res://tiles/tile_bump.obj" id="2_7pla6"]
-[ext_resource type="ArrayMesh" uid="uid://cgbbf2wdurdp2" path="res://tiles/tile_cornerInner.obj" id="3_co38g"]
-[ext_resource type="ArrayMesh" uid="uid://bcnbeocdnj1s8" path="res://tiles/tile_cornerOuter.obj" id="4_4f5uk"]
-[ext_resource type="ArrayMesh" uid="uid://di36ebkdkcdn7" path="res://tiles/tile_cornerRound.obj" id="5_fh2cd"]
-[ext_resource type="ArrayMesh" uid="uid://broiuhrdts0ou" path="res://tiles/tile_cornerSquare.obj" id="6_oo0gb"]
-[ext_resource type="ArrayMesh" uid="uid://b0sx5satngo3t" path="res://tiles/tile_crossing.obj" id="7_au6p4"]
-[ext_resource type="ArrayMesh" uid="uid://b7gi3iu0a5d3a" path="res://tiles/tile_crystal.obj" id="8_nrcln"]
-[ext_resource type="ArrayMesh" uid="uid://dkrxqoi3wtw3y" path="res://tiles/tile_dirt.obj" id="9_c4kec"]
-[ext_resource type="ArrayMesh" uid="uid://cg43ft4demll1" path="res://tiles/tile_dirtHigh.obj" id="10_of01o"]
-[ext_resource type="ArrayMesh" uid="uid://3u7qnv3pnrlk" path="res://tiles/tile_end.obj" id="11_r4rfs"]
-[ext_resource type="ArrayMesh" uid="uid://bcw432x0ot2wn" path="res://tiles/tile_endRound.obj" id="12_7l17a"]
-[ext_resource type="ArrayMesh" uid="uid://dimjq5eehauvx" path="res://tiles/tile_endRoundSpawn.obj" id="13_boa3i"]
-[ext_resource type="ArrayMesh" uid="uid://bo0id3gcpooms" path="res://tiles/tile_endSpawn.obj" id="14_3fljv"]
-[ext_resource type="ArrayMesh" uid="uid://dr57ali4j3x0h" path="res://tiles/tile_hill.obj" id="15_cpxbf"]
-[ext_resource type="ArrayMesh" uid="uid://doyxidarx51q3" path="res://tiles/tile_riverBridge.obj" id="16_wjwcp"]
-[ext_resource type="ArrayMesh" uid="uid://cv4kjl6wwek3t" path="res://tiles/tile_riverCorner.obj" id="17_h6nym"]
-[ext_resource type="ArrayMesh" uid="uid://djj8qhshp0w1k" path="res://tiles/tile_riverFall.obj" id="18_gtan1"]
-[ext_resource type="ArrayMesh" uid="uid://odu2lu6xspmo" path="res://tiles/tile_riverSlope.obj" id="19_2ewij"]
-[ext_resource type="ArrayMesh" uid="uid://dxt5jq5cwhj7k" path="res://tiles/tile_riverStraight.obj" id="20_puwgo"]
-[ext_resource type="ArrayMesh" uid="uid://dcutfchiwd2vj" path="res://tiles/tile_riverTransition.obj" id="21_1dk2v"]
-[ext_resource type="ArrayMesh" uid="uid://b5qb11wvj7vsi" path="res://tiles/tile_rock.obj" id="22_1bghc"]
-[ext_resource type="ArrayMesh" uid="uid://dflqvqeq47jda" path="res://tiles/tile_slope.obj" id="23_e18j6"]
-[ext_resource type="ArrayMesh" uid="uid://i7xgdag8giwv" path="res://tiles/tile_spawn.obj" id="24_41cik"]
-[ext_resource type="ArrayMesh" uid="uid://bdwpxdwgvytgt" path="res://tiles/tile_spawnRound.obj" id="25_olpor"]
-[ext_resource type="ArrayMesh" uid="uid://c5xpwgfqqoyix" path="res://tiles/tile_split.obj" id="26_bcy85"]
-[ext_resource type="ArrayMesh" uid="uid://cr6so1vqrowe5" path="res://tiles/tile_straight.obj" id="27_mruhm"]
-[ext_resource type="ArrayMesh" uid="uid://d0fauqwt7kedo" path="res://tiles/tile_straightHill.obj" id="28_ued3g"]
-[ext_resource type="ArrayMesh" uid="uid://de2odewu1st8k" path="res://tiles/tile_transition.obj" id="29_1w1sj"]
-[ext_resource type="ArrayMesh" uid="uid://c2kdux06cpmm1" path="res://tiles/tile_tree.obj" id="30_a3ri8"]
-[ext_resource type="ArrayMesh" uid="uid://ce87bmvc8t4fp" path="res://tiles/tile_treeDouble.obj" id="31_o5cw4"]
-[ext_resource type="ArrayMesh" uid="uid://dax5thrcctf8c" path="res://tiles/tile_treeQuad.obj" id="32_0gqh4"]
+[ext_resource type="ArrayMesh" uid="uid://bbpajueckbda2" path="res://tiles/tile.obj" id="1_dh62e"]
+[ext_resource type="ArrayMesh" uid="uid://ccsrmaynupjgi" path="res://tiles/tile_bump.obj" id="2_1ru32"]
+[ext_resource type="ArrayMesh" uid="uid://cgbbf2wdurdp2" path="res://tiles/tile_cornerInner.obj" id="3_87rq2"]
+[ext_resource type="ArrayMesh" uid="uid://bcnbeocdnj1s8" path="res://tiles/tile_cornerOuter.obj" id="4_5pfcm"]
+[ext_resource type="ArrayMesh" uid="uid://di36ebkdkcdn7" path="res://tiles/tile_cornerRound.obj" id="5_xh1jw"]
+[ext_resource type="ArrayMesh" uid="uid://broiuhrdts0ou" path="res://tiles/tile_cornerSquare.obj" id="6_poire"]
+[ext_resource type="ArrayMesh" uid="uid://b0sx5satngo3t" path="res://tiles/tile_crossing.obj" id="7_ixhcx"]
+[ext_resource type="ArrayMesh" uid="uid://b7gi3iu0a5d3a" path="res://tiles/tile_crystal.obj" id="8_yuqd2"]
+[ext_resource type="ArrayMesh" uid="uid://dkrxqoi3wtw3y" path="res://tiles/tile_dirt.obj" id="9_q8h6a"]
+[ext_resource type="ArrayMesh" uid="uid://cg43ft4demll1" path="res://tiles/tile_dirtHigh.obj" id="10_air6i"]
+[ext_resource type="ArrayMesh" uid="uid://3u7qnv3pnrlk" path="res://tiles/tile_end.obj" id="11_2ray5"]
+[ext_resource type="ArrayMesh" uid="uid://bcw432x0ot2wn" path="res://tiles/tile_endRound.obj" id="12_cacv8"]
+[ext_resource type="ArrayMesh" uid="uid://dimjq5eehauvx" path="res://tiles/tile_endRoundSpawn.obj" id="13_q0vw4"]
+[ext_resource type="ArrayMesh" uid="uid://bo0id3gcpooms" path="res://tiles/tile_endSpawn.obj" id="14_60skc"]
+[ext_resource type="ArrayMesh" uid="uid://dr57ali4j3x0h" path="res://tiles/tile_hill.obj" id="15_o56bx"]
+[ext_resource type="ArrayMesh" uid="uid://doyxidarx51q3" path="res://tiles/tile_riverBridge.obj" id="16_8dfas"]
+[ext_resource type="ArrayMesh" uid="uid://cv4kjl6wwek3t" path="res://tiles/tile_riverCorner.obj" id="17_23rcd"]
+[ext_resource type="ArrayMesh" uid="uid://djj8qhshp0w1k" path="res://tiles/tile_riverFall.obj" id="18_6tf45"]
+[ext_resource type="ArrayMesh" uid="uid://odu2lu6xspmo" path="res://tiles/tile_riverSlope.obj" id="19_hm0vq"]
+[ext_resource type="ArrayMesh" uid="uid://dxt5jq5cwhj7k" path="res://tiles/tile_riverStraight.obj" id="20_ul2up"]
+[ext_resource type="ArrayMesh" uid="uid://dcutfchiwd2vj" path="res://tiles/tile_riverTransition.obj" id="21_suwlt"]
+[ext_resource type="ArrayMesh" uid="uid://b5qb11wvj7vsi" path="res://tiles/tile_rock.obj" id="22_eiv3v"]
+[ext_resource type="ArrayMesh" uid="uid://dflqvqeq47jda" path="res://tiles/tile_slope.obj" id="23_idtx1"]
+[ext_resource type="ArrayMesh" uid="uid://i7xgdag8giwv" path="res://tiles/tile_spawn.obj" id="24_b0j7h"]
+[ext_resource type="ArrayMesh" uid="uid://bdwpxdwgvytgt" path="res://tiles/tile_spawnRound.obj" id="25_wa8vm"]
+[ext_resource type="ArrayMesh" uid="uid://c5xpwgfqqoyix" path="res://tiles/tile_split.obj" id="26_ju64b"]
+[ext_resource type="ArrayMesh" uid="uid://cr6so1vqrowe5" path="res://tiles/tile_straight.obj" id="27_slwtb"]
+[ext_resource type="ArrayMesh" uid="uid://d0fauqwt7kedo" path="res://tiles/tile_straightHill.obj" id="28_oqe33"]
+[ext_resource type="ArrayMesh" uid="uid://de2odewu1st8k" path="res://tiles/tile_transition.obj" id="29_qlfku"]
+[ext_resource type="ArrayMesh" uid="uid://c2kdux06cpmm1" path="res://tiles/tile_tree.obj" id="30_0lxxg"]
+[ext_resource type="ArrayMesh" uid="uid://ce87bmvc8t4fp" path="res://tiles/tile_treeDouble.obj" id="31_lg8ce"]
+[ext_resource type="ArrayMesh" uid="uid://dax5thrcctf8c" path="res://tiles/tile_treeQuad.obj" id="32_afwuy"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0bn67"]
+points = PackedVector3Array(-0.5, 0, -0.5, -0.5, 0.2, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0.2, 0.5, 0.5, 0.2, -0.5, 0.5, 0, 0.5, 0.5, 0.2, 0.5)
 
 [node name="Tiles" type="Node3D"]
 
 [node name="Tile" type="MeshInstance3D" parent="."]
-mesh = ExtResource("1_atsgk")
+mesh = ExtResource("1_dh62e")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tile"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tile/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_0bn67")
 
 [node name="TileBump" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
-mesh = ExtResource("2_7pla6")
+mesh = ExtResource("2_1ru32")
 
 [node name="TileCornerInner" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
-mesh = ExtResource("3_co38g")
+mesh = ExtResource("3_87rq2")
 
 [node name="TileCornerOuter" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
-mesh = ExtResource("4_4f5uk")
+mesh = ExtResource("4_5pfcm")
 
 [node name="TileCornerRound" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
-mesh = ExtResource("5_fh2cd")
+mesh = ExtResource("5_xh1jw")
 
 [node name="TileCornerSquare" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
-mesh = ExtResource("6_oo0gb")
+mesh = ExtResource("6_poire")
 
 [node name="TileCrossing" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
-mesh = ExtResource("7_au6p4")
+mesh = ExtResource("7_ixhcx")
 
 [node name="TileCrystal" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
-mesh = ExtResource("8_nrcln")
+mesh = ExtResource("8_yuqd2")
 
 [node name="TileDirt" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
-mesh = ExtResource("9_c4kec")
+mesh = ExtResource("9_q8h6a")
 
 [node name="TileDirtHigh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
-mesh = ExtResource("10_of01o")
+mesh = ExtResource("10_air6i")
 
 [node name="TileEnd" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
-mesh = ExtResource("11_r4rfs")
+mesh = ExtResource("11_2ray5")
 
 [node name="TileEndRound" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 0)
-mesh = ExtResource("12_7l17a")
+mesh = ExtResource("12_cacv8")
 
 [node name="TileEndRoundSpawn" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
-mesh = ExtResource("13_boa3i")
+mesh = ExtResource("13_q0vw4")
 
 [node name="TileEndSpawn" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 0)
-mesh = ExtResource("14_3fljv")
+mesh = ExtResource("14_60skc")
 
 [node name="TileHill" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
-mesh = ExtResource("15_cpxbf")
+mesh = ExtResource("15_o56bx")
 
 [node name="TileRiverBridge" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
-mesh = ExtResource("16_wjwcp")
+mesh = ExtResource("16_8dfas")
 
 [node name="TileRiverCorner" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
-mesh = ExtResource("17_h6nym")
+mesh = ExtResource("17_23rcd")
 
 [node name="TileRiverFall" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 0)
-mesh = ExtResource("18_gtan1")
+mesh = ExtResource("18_6tf45")
 
 [node name="TileRiverSlope" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0)
-mesh = ExtResource("19_2ewij")
+mesh = ExtResource("19_hm0vq")
 
 [node name="TileRiverStraight" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 0)
-mesh = ExtResource("20_puwgo")
+mesh = ExtResource("20_ul2up")
 
 [node name="TileRiverTransition" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
-mesh = ExtResource("21_1dk2v")
+mesh = ExtResource("21_suwlt")
 
 [node name="TileRock" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0)
-mesh = ExtResource("22_1bghc")
+mesh = ExtResource("22_eiv3v")
 
 [node name="TileSlope" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
-mesh = ExtResource("23_e18j6")
+mesh = ExtResource("23_idtx1")
 
 [node name="TileSpawn" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, 0)
-mesh = ExtResource("24_41cik")
+mesh = ExtResource("24_b0j7h")
 
 [node name="TileSpawnRound" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
-mesh = ExtResource("25_olpor")
+mesh = ExtResource("25_wa8vm")
 
 [node name="TileSplit" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 0)
-mesh = ExtResource("26_bcy85")
+mesh = ExtResource("26_ju64b")
 
 [node name="TileStraight" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 0)
-mesh = ExtResource("27_mruhm")
+mesh = ExtResource("27_slwtb")
 
 [node name="TileStraightHill" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 0)
-mesh = ExtResource("28_ued3g")
+mesh = ExtResource("28_oqe33")
 
 [node name="TileTransition" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 0)
-mesh = ExtResource("29_1w1sj")
+mesh = ExtResource("29_qlfku")
 
 [node name="TileTree" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, 0)
-mesh = ExtResource("30_a3ri8")
+mesh = ExtResource("30_0lxxg")
 
 [node name="TileTreeDouble" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
-mesh = ExtResource("31_o5cw4")
+mesh = ExtResource("31_lg8ce")
 
 [node name="TileTreeQuad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 0, 0)
-mesh = ExtResource("32_0gqh4")
+mesh = ExtResource("32_afwuy")
