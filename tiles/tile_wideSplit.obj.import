@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8bgakdu3ldfh"
+path="res://.godot/imported/tile_wideSplit.obj-6a62caaf3a11b343f39c122fd7280414.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_wideSplit.obj-6a62caaf3a11b343f39c122fd7280414.mesh"]
+
+source_file="res://tiles/tile_wideSplit.obj"
+dest_files=["res://.godot/imported/tile_wideSplit.obj-6a62caaf3a11b343f39c122fd7280414.mesh", "res://.godot/imported/tile_wideSplit.obj-6a62caaf3a11b343f39c122fd7280414.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

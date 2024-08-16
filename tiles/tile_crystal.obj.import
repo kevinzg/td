@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7gi3iu0a5d3a"
+path="res://.godot/imported/tile_crystal.obj-9c2e13304989bb021cd0fa642d7af0ce.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_crystal.obj-9c2e13304989bb021cd0fa642d7af0ce.mesh"]
+
+source_file="res://tiles/tile_crystal.obj"
+dest_files=["res://.godot/imported/tile_crystal.obj-9c2e13304989bb021cd0fa642d7af0ce.mesh", "res://.godot/imported/tile_crystal.obj-9c2e13304989bb021cd0fa642d7af0ce.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
