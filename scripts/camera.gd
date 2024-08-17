@@ -3,7 +3,12 @@ extends Node3D
 # Based on Nanotech Gamedev RTS camera (https://youtu.be/t-tkFxhpiCs?si=kr-3Gi1DJYnW4yRj)
 
 @export_range(0, 100, 1) var move_speed := 20.0
+@export_range(0, 100, 1) var zoom_min := 2.0
+@export_range(0, 100, 1) var zoom_max := 8.0
+@export_range(0, 100, 1) var zoom_speed := 40.0
+@export_range(0, 2, 0.1) var zoom_damp := 0.9
 
+var zoom_direction := 0.0
 
 @onready var socket := $Socket
 @onready var camera := $Socket/Camera3D
@@ -15,8 +20,21 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	# Move
 	var direction := Vector3.ZERO
 	direction.x = Input.get_axis("camera_left", "camera_right")
 	direction.z = Input.get_axis("camera_forward", "camera_back")
-
 	position += direction.normalized() * delta * move_speed
+
+	# Zoom
+	# TODO: On the video they did this on _unhandled_input, why?
+	if Input.is_action_just_pressed("camera_zoom_out"):
+		zoom_direction = 1
+	elif Input.is_action_just_pressed("camera_zoom_in"):
+		zoom_direction = -1
+	camera.position.z = clamp(
+		camera.position.z + zoom_direction * delta * zoom_speed,
+		zoom_min,
+		zoom_max,
+	)
+	zoom_direction *= zoom_damp

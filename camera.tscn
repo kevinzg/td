@@ -6,7 +6,6 @@
 script = ExtResource("1_pmm8t")
 
 [node name="Socket" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.899298, 0.437336, 0, -0.437336, 0.899298, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Socket"]
-transform = Transform3D(0.999071, -0.0188475, 0.0387564, 0.0188475, 0.999822, 0.000365436, -0.0387564, 0.000365347, 0.999249, 0, 0, 0)
