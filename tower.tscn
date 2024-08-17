@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8vam1rkha3wp"]
+
+[ext_resource type="ArrayMesh" uid="uid://0geu4ct6y551" path="res://models/towerRound_sampleF.obj" id="1_7hmes"]
+
+[node name="Tower" type="Node3D"]
+
+[node name="TowerRoundSampleF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_7hmes")
