@@ -81,17 +81,13 @@ points = PackedVector3Array(0.133562, 0.472654, 0.311552, -0.495334, 0, -0.49533
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4ygis"]
 points = PackedVector3Array(0.414766, 0.284093, 0.355554, -0.482632, -2.77556e-17, -0.482632, -0.482632, -2.77556e-17, 0.482632, 0.482632, -2.77556e-17, -0.482632, -0.373106, 0.3, -0.358238, 0.482632, -2.77556e-17, 0.482632, -0.507937, 0.214267, 0.507937, 0.507937, 0.214267, -0.507937, -0.507937, 0.214267, -0.507937, 0.507937, 0.214267, 0.507937, -0.373106, 0.3, 0.358238, 0.373106, 0.3, -0.358238, 0.373106, 0.3, 0.358238, -0.483629, 0.256548, -0.362722, 0.483629, 0.256548, -0.362722, -0.483629, 0.256548, 0.362722, 0.483629, 0.256548, 0.362722, -0.414766, 0.284093, -0.355554, 0.414766, 0.284093, -0.355554, -0.414766, 0.284093, 0.355554)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_010y4"]
-points = PackedVector3Array(0.507937, 0.214264, 0.507937, -0.471748, -1.38778e-17, -0.471748, -0.471748, -1.38778e-17, 0.471748, -0.507937, 0.214264, -0.507937, 0.471748, -1.38778e-17, -0.471748, -0.507937, 0.214264, 0.507937, 0.507937, 0.214264, -0.507937, 0.471748, -1.38778e-17, 0.471748)
+[sub_resource type="BoxShape3D" id="BoxShape3D_gv8yg"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5i52m"]
-points = PackedVector3Array(0.507937, 0.404721, -0.396763, -0.488496, 0, -0.488496, -0.488496, 0, 0.488496, -0.507937, 0.404721, -0.396763, 0.488496, 0, -0.488496, 0.507937, 0.214245, 0.507937, 0.488496, 0, 0.488496, -0.507937, 0.214245, 0.507937, 0.496312, 0.4, -0.496312, -0.496312, 0.4, -0.496312)
+[sub_resource type="BoxShape3D" id="BoxShape3D_xkmld"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ue60c"]
-points = PackedVector3Array(-0.488496, 0, -0.488496, -0.488496, 0, 0.488496, -0.507937, 0.404721, -0.444395, 0.488496, 0, -0.488496, 0.507937, 0.214245, 0.507937, 0.492734, 0.398547, -0.492734, -0.507937, 0.214245, 0.507937, 0.488496, 0, 0.488496, 0.507937, 0.404721, -0.444395, -0.492734, 0.398547, -0.492734)
+[sub_resource type="BoxShape3D" id="BoxShape3D_u1y7f"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g15jx"]
-points = PackedVector3Array(0.507937, 0.214264, 0.507937, -0.471748, -1.38778e-17, -0.471748, -0.471748, -1.38778e-17, 0.471748, -0.507937, 0.214264, -0.507937, 0.471748, -1.38778e-17, -0.471748, -0.507937, 0.214264, 0.507937, 0.507937, 0.214264, -0.507937, 0.471748, -1.38778e-17, 0.471748)
+[sub_resource type="BoxShape3D" id="BoxShape3D_iy7l8"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ng7g5"]
 points = PackedVector3Array(0.507937, 0.214264, 0.507937, -0.471748, -1.38778e-17, -0.471748, -0.471748, -1.38778e-17, 0.471748, -0.507937, 0.214264, -0.507937, 0.471748, -1.38778e-17, -0.471748, -0.507937, 0.214264, 0.507937, 0.507937, 0.214264, -0.507937, 0.471748, -1.38778e-17, 0.471748)
@@ -281,7 +277,8 @@ mesh = ExtResource("17_23rcd")
 [node name="StaticBody3D" type="StaticBody3D" parent="TileRiverCorner"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TileRiverCorner/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_010y4")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_gv8yg")
 
 [node name="TileRiverFall" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 0)
@@ -290,7 +287,8 @@ mesh = ExtResource("18_6tf45")
 [node name="StaticBody3D" type="StaticBody3D" parent="TileRiverFall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TileRiverFall/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_5i52m")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_xkmld")
 
 [node name="TileRiverSlope" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0)
@@ -299,7 +297,8 @@ mesh = ExtResource("19_hm0vq")
 [node name="StaticBody3D" type="StaticBody3D" parent="TileRiverSlope"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TileRiverSlope/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_ue60c")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_u1y7f")
 
 [node name="TileRiverStraight" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 0)
@@ -308,7 +307,8 @@ mesh = ExtResource("20_ul2up")
 [node name="StaticBody3D" type="StaticBody3D" parent="TileRiverStraight"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TileRiverStraight/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_g15jx")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_iy7l8")
 
 [node name="TileRiverTransition" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
