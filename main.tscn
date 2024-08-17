@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://cen5egsct6ham"]
+[gd_scene load_steps=15 format=3 uid="uid://cen5egsct6ham"]
 
 [ext_resource type="MeshLibrary" uid="uid://b0s4n5x2ra4f" path="res://mesh_libraries/tiles.tres" id="1_nhgmw"]
 [ext_resource type="PackedScene" uid="uid://ccva3rgw4pnky" path="res://player.tscn" id="2_15p47"]
 [ext_resource type="PackedScene" uid="uid://7cchr8ol1hkf" path="res://camera.tscn" id="3_4dbpm"]
 [ext_resource type="PackedScene" uid="uid://c8vam1rkha3wp" path="res://tower.tscn" id="4_p8mw1"]
+[ext_resource type="PackedScene" uid="uid://co65o1g6rygp5" path="res://flag.tscn" id="5_atg64"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_81gwb"]
 sky_top_color = Color(0.479725, 0.770895, 0.927824, 1)
@@ -58,8 +59,9 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
-[node name="Player" parent="." instance=ExtResource("2_15p47")]
+[node name="Player" parent="." node_paths=PackedStringArray("destination") instance=ExtResource("2_15p47")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.568915, 1.04197)
+destination = NodePath("../Flag")
 
 [node name="Camera" parent="." instance=ExtResource("3_4dbpm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
@@ -113,3 +115,6 @@ shape = SubResource("ConvexPolygonShape3D_tg1fc")
 
 [node name="Tower" parent="." instance=ExtResource("4_p8mw1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.3, 2.5)
+
+[node name="Flag" parent="." instance=ExtResource("5_atg64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)
