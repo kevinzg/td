@@ -2,6 +2,11 @@ extends Node3D
 
 # Based on Nanotech Gamedev RTS camera (https://youtu.be/t-tkFxhpiCs?si=kr-3Gi1DJYnW4yRj)
 
+
+@export var min_x := -10.0
+@export var max_x := 10.0
+@export var min_z := -10.0
+@export var max_z := 10.0
 @export_range(0, 100, 1) var move_speed := 20.0
 @export_range(0, 100, 1) var zoom_min := 0.0
 @export_range(0, 100, 1) var zoom_max := 8.0
@@ -27,6 +32,8 @@ func _process(delta: float) -> void:
 	direction += Input.get_axis("camera_forward", "camera_back") * socket.basis.z
 	direction.y = 0
 	position += direction.normalized() * delta * move_speed
+	position.x = clamp(position.x, min_x, max_x)
+	position.z = clamp(position.z, min_z, max_z)
 
 	# Zoom
 	# TODO: On the video they did this on _unhandled_input, why?
