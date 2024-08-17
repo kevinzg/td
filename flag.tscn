@@ -3,7 +3,7 @@
 [ext_resource type="ArrayMesh" uid="uid://debeclb8rkhwh" path="res://models/aid-cane-low-vision.obj" id="1_1q7jn"]
 
 [node name="Flag" type="Node3D"]
+top_level = true
 
 [node name="Aid-cane-low-vision" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00166607, 0.00636053, -0.00304949)
 mesh = ExtResource("1_1q7jn")
